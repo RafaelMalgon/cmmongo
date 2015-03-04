@@ -1,0 +1,14 @@
+---
+production:
+  adapter: postgres
+  host: localhost
+  database: cmmongo
+  user: homestead
+  password: secret
+
+testing:
+  adapter: postgres
+  host: localhost
+  database: cmmongo_test
+  user: homestead
+  password: secret

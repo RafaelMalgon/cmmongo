@@ -12,5 +12,9 @@ describe Configuration do
     conf = Configuration.new '../../spec/files/conf'
     expect {conf.no_key}.to raise_error(NoMethodError)
   end
+  it "gives object access to hashes within the conf" do
+    conf = Configuration.new '../../spec/files/conf'
+    expect(conf.inner.inner_value).to eql('valid')
+  end
 
 end

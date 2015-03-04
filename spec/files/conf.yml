@@ -5,3 +5,5 @@ arr:
  - item
  - item 
  - item
+inner: 
+  inner_value: valid
